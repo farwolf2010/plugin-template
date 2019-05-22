@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
  
   s.platform  = :ios, "9.0"
-  s.name         = "testp"
+  s.name         = "plugintemplate"
   s.version      = "0.0.1"
   s.summary      = "Handle some data."
   s.description  = <<-DESC
