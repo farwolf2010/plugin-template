@@ -3,7 +3,7 @@ package com.weexplus.plugin.component;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import com.farwolf.plugintemplate.view.DemoView;
+import com.weexplus.plugin.view.DemoView;
 import com.farwolf.weex.annotation.WeexComponent;
 import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.annotation.JSMethod;
