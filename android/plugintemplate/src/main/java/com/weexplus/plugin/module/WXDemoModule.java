@@ -1,4 +1,4 @@
-package com.farwolf.plugintemplate.module;
+package com.weexplus.plugin.module;
 
 
 import android.util.Log;

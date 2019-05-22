@@ -1,4 +1,4 @@
-package com.farwolf.plugintemplate.init;
+package com.weexplus.plugin.init;
 
 import android.content.Context;
 

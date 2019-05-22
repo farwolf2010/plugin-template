@@ -1,4 +1,4 @@
-package com.farwolf.plugintemplate.component;
+package com.weexplus.plugin.component;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

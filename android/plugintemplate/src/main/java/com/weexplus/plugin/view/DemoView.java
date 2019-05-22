@@ -1,4 +1,4 @@
-package com.farwolf.plugintemplate.view;
+package com.weexplus.plugin.view;
 
 import android.content.Context;
 import android.widget.LinearLayout;
