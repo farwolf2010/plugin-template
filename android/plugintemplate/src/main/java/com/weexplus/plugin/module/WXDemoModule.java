@@ -10,6 +10,7 @@ import com.taobao.weex.bridge.JSCallback;
 
 import java.util.HashMap;
 
+//此注解将自动注册module到weex
 @WeexModule(name="demo")
 public class WXDemoModule extends WXModuleBase {
 

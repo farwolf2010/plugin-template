@@ -12,7 +12,10 @@ import com.taobao.weex.ui.action.BasicComponentData;
 import com.taobao.weex.ui.component.WXComponent;
 import com.taobao.weex.ui.component.WXVContainer;
 
+//此demo演示了如何制作一个界面组件
+//可以改名后直接在这上面改，也可以删除了自己写
 //name:在vue中标签的名字
+//此注解将自动注册组件到weex
 @WeexComponent(name="demo")
 public class WXDemoComponent extends WXComponent<DemoView> {
     public WXDemoComponent(WXSDKInstance instance, WXVContainer parent, BasicComponentData basicComponentData) {

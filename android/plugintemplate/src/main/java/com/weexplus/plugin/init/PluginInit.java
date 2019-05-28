@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.farwolf.weex.annotation.ModuleEntry;
 
+//此注解会被框架扫描到并执行类的init方法
 @ModuleEntry
 public class PluginInit {
 
