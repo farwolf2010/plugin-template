@@ -5,12 +5,14 @@ import android.support.annotation.NonNull;
 
 import com.weexplus.plugin.view.DemoView;
 import com.farwolf.weex.annotation.WeexComponent;
+import com.taobao.weex.ui.component.WXComponentProp;
 import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.annotation.JSMethod;
 import com.taobao.weex.bridge.JSCallback;
 import com.taobao.weex.ui.action.BasicComponentData;
 import com.taobao.weex.ui.component.WXComponent;
 import com.taobao.weex.ui.component.WXVContainer;
+import com.farwolf.weex.annotation.WeexComponent;
 
 //此demo演示了如何制作一个界面组件
 //可以改名后直接在这上面改，也可以删除了自己写
