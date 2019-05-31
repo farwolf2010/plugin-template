@@ -11,24 +11,31 @@ WX_PlUGIN_EXPORT_COMPONENT(demo, WXDemoComponent)
 
 
 @implementation WXDemoComponent
-    //组件也可以暴露方法，在前端用this.$refs.demo.log()调用，注意不能导出同步方法，如果y想要返回值，请传入callback
-    WX_EXPORT_METHOD(@selector(log))
-    
-    //构造函数，请在这将属性取下来，并在viewDidLoad中做首次渲染
+
+    //组件暴露方法给前端，在前端用this.$refs.demo.log()调用，
+    //注意不能导出同步方法，如果想要返回值，请通过传入callback的方式来接收值
+    WX_EXPORT_METHOD(@selector(log:))
+
+
+
+    //构造函数，
+    //attributes 属性值的初始值在这取然后在viewDidLoad中做首次渲染
    - (instancetype)initWithRef:(NSString *)ref type:(NSString *)type styles:(NSDictionary *)styles attributes:(NSDictionary *)attributes events:(NSArray *)events weexInstance:(WXSDKInstance *)weexInstance
     {
         if (self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance]) {
         }
-        
-        //     UIFont *font = [WXUtility fontWithSize:_fontSize textWeight:_fontWeight textStyle:_fontStyle fontFamily:_fontFamily scaleFactor:self.weexInstance.pixelScaleFactor useCoreText:[self useCoreText]];
         return self;
     }
-    
+
+
     //初始化完成调用
     -(void)viewDidLoad{
         [super viewDidLoad];
+        //这里演示如何想前端发送事件，前端通过@load=“onload”来接受这个事件
+        [self fireEvent:@"load" params:@{@"key":@"value"}];
     }
-    
+
+
      //属性值发生变化，请在这里做界面渲染操作
     -(void)updateAttributes:(NSDictionary *)attributes{
         [super updateAttributes:attributes];
@@ -39,8 +46,11 @@ WX_PlUGIN_EXPORT_COMPONENT(demo, WXDemoComponent)
     {
         [super insertSubview:subcomponent atIndex:index];
     }
-    -(void)log{
+   -(void)log:(WXModuleCallback)callback{
         NSLog(@"log");
+        if(callback){
+            callback(@{});
+        }
     }
     
     

@@ -22,12 +22,13 @@ public class WXDemoComponent extends WXComponent<DemoView> {
         super(instance, parent, basicComponentData);
     }
 
+    //**1.在这个方法里返回目标view
     @Override
     protected DemoView initComponentHostView(@NonNull Context context) {
         return new DemoView(context);
     }
 
-    //此函数用来初始化
+    //2.此函数用来初始化
     @Override
     protected void onHostViewInitialized(DemoView host) {
         super.onHostViewInitialized(host);
@@ -41,5 +42,11 @@ public class WXDemoComponent extends WXComponent<DemoView> {
 
     }
 
+   //**android 是通过注解定义属性的
+    @WXComponentProp(name = "color")
+    public void setColor(String color){
+        //setSeekBarColor(getHostView(), Color.parseColor(color));
+
+    }
 
 }
