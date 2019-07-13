@@ -28,6 +28,13 @@ WX_PlUGIN_EXPORT_COMPONENT(demo, WXDemoComponent)
     }
 
 
+    -(UIView*)loadView
+    {
+        UIWebView *web=[UIWebView new];
+        return  web;
+    }
+
+
     //初始化完成调用
     -(void)viewDidLoad{
         [super viewDidLoad];
