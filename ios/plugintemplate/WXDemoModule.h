@@ -9,7 +9,6 @@
 #import "farwolf.h"
 #import "farwolf_weex.h"
 #import <WeexPluginLoader/WeexPluginLoader.h>
-#import  "WXEventModuleProtocol.h"
 #import "WXModuleProtocol.h"
 @interface WXDemoModule : NSObject <WXModuleProtocol>
 
