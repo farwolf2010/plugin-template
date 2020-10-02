@@ -3,4 +3,4 @@ let demo={
 
     }
 }
-module.exports=demo
+export  default demo

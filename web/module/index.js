@@ -5,4 +5,4 @@ let module={
         weex.registerModule('demo',demo)
     }
 }
-module.exports=module
+export  default module

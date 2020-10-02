@@ -4,4 +4,4 @@ let component={
         weex.registerComponent('demo',demo)
     }
 }
-module.exports=component
+export  default component
