@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = '*.framework'
 
   s.exclude_files = "Source/Exclude"
-  s.dependency 'farwolf.weex' 
+  s.dependency 'weexplus' 
  
  
 

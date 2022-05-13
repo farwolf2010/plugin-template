@@ -32,5 +32,5 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    api 'com.farwolf.weexplus:farwolf.weex:latest.integration'
+      implementation project(path: ':plus')
 }

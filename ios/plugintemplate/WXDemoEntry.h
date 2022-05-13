@@ -7,9 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "WXSDKInstance.h"
-#import  "WXSDKEngine.h"
-#import "farwolf_weex.h"
+#import "WeexPlus.h"
+
 
 
 @interface WXDemoEntry : NSObject

@@ -3,8 +3,8 @@ package com.weexplus.plugin.module;
 
 import android.util.Log;
 
-import com.farwolf.weex.annotation.WeexModule;
-import com.farwolf.weex.base.WXModuleBase;
+import com.weexplus.core.plugin.WeexModule;
+import com.weexplus.util.WXModuleBase;
 import com.taobao.weex.annotation.JSMethod;
 import com.taobao.weex.bridge.JSCallback;
 

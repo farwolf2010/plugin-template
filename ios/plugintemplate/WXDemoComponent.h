@@ -6,15 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "farwolf.h"
-#import "farwolf_weex.h"
+#import "WeexPlus.h"
 #import <WeexPluginLoader/WeexPluginLoader.h>
-#import "WXModuleProtocol.h"
 
 
 @interface WXDemoComponent : WXComponent
 
-    
+
 @end
 
 
